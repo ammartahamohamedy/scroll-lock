@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ScrollLock</string>
+    <string name="admin_name">ScrollLock Device Owner</string>
+    <string name="admin_description">Locks selected apps using Android Device Policy APIs.</string>
+
+    <string name="tagline">Keep distracting apps installed but unavailable — hidden, suspended, and uninstall-blocked.</string>
+    <string name="settings">Settings</string>
+    <string name="create_recovery_key">Create recovery key</string>
+    <string name="rotate_recovery_key">Rotate recovery key…</string>
+    <string name="search_hint">Search apps or package names</string>
+    <string name="locked_count">Locked apps: %1$d</string>
+    <string name="lock">Lock</string>
+    <string name="unlock">Unlock…</string>
+    <string name="enable_hardening">Enable hardening</string>
+    <string name="disable_hardening">Disable hardening…</string>
+    <string name="reapply_policies">Reapply policies</string>
+    <string name="recovery_exit">Recovery / exit</string>
+    <string name="show_system_apps">Show system apps</string>
+    <string name="show_system_apps_hint">Advanced. Critical packages stay protected.</string>
+    <string name="status_owner">Device Owner active — policy control available.</string>
+    <string name="status_owner_hardened">Device Owner active — hardening is on.</string>
+    <string name="status_not_owner">Not Device Owner. Install the APK, then provision with adb before locking apps.</string>
+    <string name="onboarding_title">Finish setup</string>
+    <string name="onboarding_body">1. Create and save a recovery key off this phone.\n2. Lock the apps you want blocked.\n3. Optionally enable hardening in Settings.</string>
+    <string name="empty_not_owner_title">Waiting for Device Owner</string>
+    <string name="empty_not_owner_body">After a clean provision:\nadb shell dpm set-device-owner dev.scrolllock.dpc/.ScrollLockAdminReceiver</string>
+    <string name="empty_no_key_title">Create a recovery key first</string>
+    <string name="empty_no_key_body">You need a recovery key before any app can be locked. Keep it somewhere deliberately inconvenient.</string>
+    <string name="empty_no_results_title">No matching apps</string>
+    <string name="empty_no_results_body">Try another name or package id.</string>
+    <string name="empty_loading">Loading installed apps…</string>
+    <string name="settings_title">Settings</string>
+    <string name="section_recovery">Recovery</string>
+    <string name="section_policies">Policies</string>
+    <string name="section_display">Display</string>
+    <string name="section_danger">Danger zone</string>
+    <string name="section_sites">Blocked sites</string>
+    <string name="blocked_sites_hint">Blocks these domains in Chrome, Edge, Brave, Opera, and Samsung Internet. Add freely once a recovery key exists. Removing a domain requires the recovery key.</string>
+    <string name="add_site_label">Add domain</string>
+    <string name="site_input_hint">facebook.com</string>
+    <string name="blocked_sites_list_label">Blocked domains</string>
+    <string name="add_blocked_site">Add to blocklist</string>
+    <string name="no_blocked_sites">No domains blocked yet.</string>
+    <string name="remove_site">Remove</string>
+    <string name="recovery_key_required_sites">Create a recovery key before managing blocked sites.</string>
+    <string name="back">Back</string>
+    <string name="copy_to_clipboard">Copy to Clipboard</string>
+    <string name="recovery_key_copied">Recovery key copied to clipboard</string>
+    <string name="i_saved_it">I saved it</string>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#FFF4F5F7</color>
+    <color name="surface">#FFFFFFFF</color>
+    <color name="surface_muted">#FFE8EAED</color>
+    <color name="ink">#FF1A1D21</color>
+    <color name="ink_secondary">#FF5C6570</color>
+    <color name="accent">#FF0F6E56</color>
+    <color name="accent_on">#FFFFFFFF</color>
+    <color name="danger">#FFB42318</color>
+    <color name="success">#FF067647</color>
+    <color name="warning">#FFB54708</color>
+    <color name="banner_ok_bg">#FFDCFAE6</color>
+    <color name="banner_ok_fg">#FF067647</color>
+    <color name="banner_warn_bg">#FFFFEAD5</color>
+    <color name="banner_warn_fg">#FFB54708</color>
+    <color name="banner_error_bg">#FFFEE4E2</color>
+    <color name="banner_error_fg">#FFB42318</color>
+    <color name="banner_info_bg">#FFE8EEF5</color>
+    <color name="banner_info_fg">#FF1A1D21</color>
+    <color name="divider">#FFD0D5DD</color>
+    <color name="button_secondary_bg">#FFE8EAED</color>
+    <color name="button_secondary_fg">#FF1A1D21</color>
+</resources>

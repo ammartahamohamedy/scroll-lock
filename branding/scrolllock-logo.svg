@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" role="img" aria-label="ScrollLock">
+  <!-- Simple padlock mark for ScrollLock -->
+  <rect width="108" height="108" rx="24" fill="#1A1D21"/>
+  <path
+    d="M 36 50 V 40
+       A 18 18 0 0 1 72 40
+       V 50"
+    fill="none"
+    stroke="#3DDC97"
+    stroke-width="8"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+  <rect x="30" y="50" width="48" height="38" rx="8" fill="#3DDC97"/>
+  <circle cx="54" cy="66" r="4.5" fill="#1A1D21"/>
+  <rect x="51.5" y="66" width="5" height="12" rx="2" fill="#1A1D21"/>
+</svg>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/space_xl">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/space_sm"
+            android:paddingBottom="@dimen/space_md">
+
+            <Button
+                android:id="@+id/backButton"
+                style="@style/Widget.ScrollLock.Button.Secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_md"
+                android:layout_weight="1"
+                android:text="@string/settings_title"
+                android:textColor="@color/ink"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/statusBanner"
+            style="@style/Text.ScrollLock.Banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_banner"
+            android:padding="@dimen/banner_padding"
+            android:textColor="@color/banner_info_fg" />
+
+        <TextView
+            android:id="@+id/resultBanner"
+            style="@style/Text.ScrollLock.Banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_sm"
+            android:background="@drawable/bg_banner"
+            android:padding="@dimen/banner_padding"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/Text.ScrollLock.Section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xl"
+            android:text="@string/section_recovery" />
+
+        <Button
+            android:id="@+id/recoveryButton"
+            style="@style/Widget.ScrollLock.Button.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_sm"
+            android:text="@string/create_recovery_key" />
+
+        <TextView
+            style="@style/Text.ScrollLock.Section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xl"
+            android:text="@string/section_policies" />
+
+        <Button
+            android:id="@+id/hardeningButton"
+            style="@style/Widget.ScrollLock.Button.Secondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_sm"
+            android:text="@string/enable_hardening" />
+
+        <Button
+            android:id="@+id/reapplyButton"
+            style="@style/Widget.ScrollLock.Button.Secondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_sm"
+            android:text="@string/reapply_policies" />
+
+        <TextView
+            style="@style/Text.ScrollLock.Section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xl"
+            android:text="@string/section_sites" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_sm"
+            android:lineSpacingMultiplier="1.25"
+            android:text="@string/blocked_sites_hint"
+            android:textColor="@color/ink_secondary"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_sm"
+            android:background="@drawable/bg_surface_card"
+            android:orientation="vertical"
+            android:padding="@dimen/space_md">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_site_label"
+                android:textColor="@color/ink"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/siteInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_sm"
+                android:background="@drawable/bg_search"
+                android:hint="@string/site_input_hint"
+                android:importantForAutofill="no"
+                android:inputType="textUri"
+                android:minHeight="@dimen/touch_min"
+                android:paddingLeft="@dimen/space_md"
+                android:paddingRight="@dimen/space_md"
+                android:singleLine="true"
+                android:textColor="@color/ink"
+                android:textColorHint="@color/ink_secondary"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/addSiteButton"
+                style="@style/Widget.ScrollLock.Button.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_sm"
+                android:text="@string/add_blocked_site" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_md"
+            android:text="@string/blocked_sites_list_label"
+            android:textColor="@color/ink"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/blockedSitesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_sm"
+            android:background="@drawable/bg_surface_card"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/space_md"
+            android:paddingRight="@dimen/space_md"
+            android:paddingTop="@dimen/space_sm"
+            android:paddingBottom="@dimen/space_sm" />
+
+        <TextView
+            android:id="@+id/blockedSitesEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_sm"
+            android:background="@drawable/bg_surface_card"
+            android:padding="@dimen/space_md"
+            android:text="@string/no_blocked_sites"
+            android:textColor="@color/ink_secondary"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/Text.ScrollLock.Section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xl"
+            android:text="@string/section_display" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_sm"
+            android:background="@drawable/bg_surface_card"
+            android:orientation="vertical"
+            android:padding="@dimen/space_md">
+
+            <CheckBox
+                android:id="@+id/showSystemBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/touch_min"
+                android:text="@string/show_system_apps"
+                android:textColor="@color/ink" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="@string/show_system_apps_hint"
+                android:textColor="@color/ink_secondary"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Text.ScrollLock.Section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xl"
+            android:text="@string/section_danger" />
+
+        <Button
+            android:id="@+id/recoveryExitButton"
+            style="@style/Widget.ScrollLock.Button.Danger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_sm"
+            android:text="@string/recovery_exit" />
+    </LinearLayout>
+</ScrollView>
